@@ -1,0 +1,30 @@
+<div class="container main-con mb-2">
+    <div class="child-con">
+        <h2 class="text-white my-2">Rate This Movie</h2>
+        <div class="card-container">
+            <div class="float-layout">
+                <div class="card-image">
+                    <img class="image" src="https://images.gmanews.tv/webpics/2021/09/640_ENUS_SQdGame_Main_Playground_Vertical_27x40_RGB_PRE_2021_09_15_18_39_00.jpg">
+                    <div class="card bg-dark text-white">
+                        <div class="container">
+                            <div class="card-title">Squid Game</div>
+                            <div class="card-desc font-weight-light">
+                                Squid Game, which started streaming on Sept. 17, focuses on a desperately indebted group of people in South Korea. They're first tricked into a deadly tournament of children's games, but then many of them volunteer to come back, realizing the games may be their only chance to win the money they need to survive. Big bucks are at stake -- 45 billion South Korean won, which translates to $38 million US (£27 million,  AU$52 million). But the odds of survival aren't good. Think The Hunger Games, only featuring contests such as Red Light, Green Light and marbles.
+                            </div>
+                            <div class="d-inline">
+                                <ngb-rating [max]="5" [(rate)]="currentRate">
+                                    <ng-template let-fill="fill" let-index="index">
+                                    <h1 class="star" [class.filled]="fill === 100">&#9733;</h1>
+                                    </ng-template>
+                                </ngb-rating>
+                            </div>
+                            <div class="d-inline">
+                                <h5 class="text-white mb-2">Rating <b>{{currentRate}}</b> of 5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
